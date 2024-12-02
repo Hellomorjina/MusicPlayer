@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/0d9db3ab9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+         <img src="img/download.png" alt="" class="song-img">
+         <h1>Amar Sonar Bangla</h1>
+         <p>Rabindranath Tagore</p>
+         <audio src="img/bd_national_anthem.mp3" type="audio/mp3"  id="song"></audio>
+         <input type="range" value="0" id="progress">
+         <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i id ="ctrlIcon" class="fa-solid fa-play  "></i></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+         </div>
+      </div>
+     </div>
+     <script src="app.js"></script>
+</body>
+</html>
